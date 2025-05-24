@@ -15,9 +15,33 @@ const Sidebar = () => {
           fill
         />
       </div>
-      <p className="text-sm font-bricolage text-neutral-200">
+      <p className="text-sm font-bricolage text-neutral-400">
         Your Premium Casino Experience{" "}
       </p>
+      <div className="md:hidden p-6 bg-amber-100/10 backdrop-blur-2xl rounded-xl shadow-lg max-w-xl mx-auto text-center space-y-2 font-bricolage">
+        <h1 className="text-3xl font-bold text-emerald-400 drop-shadow-sm">
+          WELCOME TO OUR GAMEROOM
+        </h1>
+        <h2 className="text-xl font-semibold text-amber-300 tracking-wider">
+          COSTA FAYE GAMES
+        </h2>
+        <p className="italic text-lg text-white/80">
+          “Spin the Future, Win Today”
+        </p>
+        <p className="text-white">
+          Highlights innovation and immediate rewards, appealing to
+          forward-thinking players.
+        </p>
+        <p className="font-semibold text-pink-400 uppercase">
+          24/7 NON STOP · DM US · 100% Legit Premium Online Casino
+        </p>
+        <div className="bg-amber-300/10 p-4 rounded-md text-amber-200 font-bold space-y-1 border border-amber-400/30">
+          <p>🎁 50% SIGNUP BONUS</p>
+          <p>🎉 100% REFERRAL BONUS</p>
+          <p>🌟 20% REGULAR BONUS FOR VIP GUEST</p>
+        </div>
+      </div>
+
       <div className="grid grid-rows-1 gap-3 self-start mt-3 w-full ">
         {Array.from({ length: 5 }, (_, i) => (
           <a key={i} href={imageList[i].url} target="_blank" rel="noreferrer">

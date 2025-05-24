@@ -30,21 +30,39 @@ const Main = () => {
 
   return (
     <div className="md:col-span-2 px-1 md:w-1/2 w-full mt-12 md:px-0 flex-col shadow-sm flex md:items-center justify-center gap-4">
-      <div className="space-y-2">
-        <h1 className="text-center text-4xl leading-7 font-bricolage font-bold capitalize customPulse text-sky-600">
-          welcome to <br />
-          costafaye games
+      <div className="p-6 bg-amber-100/10 backdrop-blur-2xl rounded-xl shadow-lg max-w-xl mx-auto text-center space-y-2 font-bricolage">
+        <h1 className="text-3xl font-bold text-emerald-400  font-bricolage drop-shadow-sm">
+          WELCOME TO OUR GAMEROOM
         </h1>
-        <p className="font-bricolage text-center">
-          Experience the thrill of premium online casino gaming.
+        <h2 className="text-xl font-bold leading-3 mb-4 font-work-sans text-amber-300 tracking-wider">
+          COSTA FAYE GAMES
+        </h2>
+        <p className="italic text-lg text-white/80">
+          “Spin the Future, Win Today”
         </p>
+        <p className="text-white">
+          Highlights innovation and immediate rewards, appealing to
+          forward-thinking players.
+        </p>
+        <p className="font-semibold text-pink-400 uppercase">
+          24/7 NON STOP · DM US · 100% Legit Premium Online Casino
+        </p>
+        <div className="bg-amber-300/10 p-4 rounded-md text-amber-200 font-bold space-y-1 border border-amber-400/30">
+          <p>🎁 50% SIGNUP BONUS</p>
+          <p>🎉 100% REFERRAL BONUS</p>
+          <p>🌟 20% REGULAR BONUS FOR VIP GUEST</p>
+        </div>
       </div>
-      <div className="w-full md:w-3/4 max-h-max flex flex-col gap-4 p-5 bg-neutral-700/30 backdrop-blur-2xl border border-[hsla(0,0%,100%,0.1)] h-full rounded-md">
+      <div className="w-full md:w-xl max-h-max flex flex-col gap-4 p-5 bg-amber-100/10 backdrop-blur-2xl shadow-sm h-full rounded-md">
         <h1 className="font-work-sans font-bold text-neutral-300 text-xl ">
           Join our official pages
         </h1>
         <div className="flex gap-3">
-          <a target="_blank" href="https://t.me/costafayegames">
+          <a
+            target="_blank"
+            href="https://t.me/costafayegames"
+            className="w-full md:max-w-max"
+          >
             <div className="w-full md:max-w-max p-3 h-10 gap-2 flex items-center justify-center rounded-full bg-sky-400/20 cursor-pointer shadow-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,6 +77,7 @@ const Main = () => {
           </a>
           <a
             target="_blank"
+            className="w-full md:max-w-max"
             href="https://www.facebook.com/people/Costa-Faye-Games/61569979275184/"
           >
             <div className="w-full md:max-w-max h-10 p-3 gap-2 flex items-center justify-center rounded-full bg-blue-600/20 cursor-pointer shadow-sm">
@@ -168,7 +187,11 @@ const Main = () => {
             Contact our admins
           </h1>
           <div className="flex flex-wrap gap-2">
-            <a target="_blank" href="https://telegram.me/Deviling1">
+            <a
+              target="_blank"
+              href="https://telegram.me/Deviling1"
+              className="w-full md:max-w-max"
+            >
               <div className="min-w-20 w-full md:w-max p-3 h-10 gap-2 flex items-center justify-center rounded-full bg-sky-400/20 cursor-pointer shadow-sm">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -183,6 +206,7 @@ const Main = () => {
             </a>
             <a
               target="_blank"
+              className="w-full md:max-w-max"
               href="https://www.facebook.com/share/1BKgEN4qqQ/"
             >
               <div className="min-w-20 w-full md:w-max h-10 p-3 gap-2 flex items-center justify-center rounded-full bg-blue-600/20 cursor-pointer shadow-sm">
@@ -209,6 +233,7 @@ const Main = () => {
             <a
               href="https://www.facebook.com/profile.php?id=61569979275184&sk=reviews"
               target="_blank"
+              className="w-full md:max-w-max"
             >
               <div className="p-3 gap-2 w-full flex md:w-max items-center justify-center rounded-full bg-emerald-400/40 cursor-pointer shadow-sm">
                 <p className="font-bricolage ">Customer Reviews</p>
