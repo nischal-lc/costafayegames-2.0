@@ -29,7 +29,7 @@ const Page = () => {
                   height={64}
                   className="object-cover rounded-lg shadow-lg mb-2"
                 />
-                <h2 className="font-bricolage font-semibold">{game.name}</h2>
+                <h2 className="font-bricolage text-center leading-4 font-semibold">{game.name}</h2>
               </div>
             </a>
           );

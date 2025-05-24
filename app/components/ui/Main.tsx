@@ -15,22 +15,39 @@ const Main = () => {
   const [isImageOpen, setIsImageOpen] = useState(false);
   const [phone, setPhone] = useState("");
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const name = (form.elements.namedItem("name") as HTMLInputElement)?.value;
     const email = (form.elements.namedItem("email") as HTMLInputElement)?.value;
-    console.log("Form submitted with:", {
-      name,
-      email,
-      phone,
-    });
+    const phoneno = (form.elements.namedItem("phoneno") as HTMLInputElement)
+      ?.value;
+    const message = `New Form Submission:\nName: ${name}\nEmail: ${email} \nPhone no: ${phoneno}`;
+
+    try {
+      const res = await fetch("/api/send-message", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        console.error("Failed to send message:", data);
+      } else {
+        console.log("Message sent successfully:", data);
+      }
+    } catch (err) {
+      console.error("Error sending message:", err);
+    }
+
     setIsOpen(false);
   };
 
   return (
     <div className="md:col-span-2 px-1 md:w-1/2 w-full mt-12 md:px-0 flex-col shadow-sm flex md:items-center justify-center gap-4">
-      <div className="p-6 hidden md:block bg-amber-100/10 backdrop-blur-2xl rounded-xl shadow-lg max-w-xl mx-auto text-center space-y-2 font-bricolage">
+      <div className="p-2 md:p-6 hidden md:block bg-amber-100/10 backdrop-blur-2xl rounded-xl shadow-lg max-w-xl mx-auto text-center space-y-2 font-bricolage">
         <h1 className="text-3xl font-bold text-emerald-400  font-bricolage drop-shadow-sm">
           WELCOME TO OUR GAMEROOM
         </h1>
@@ -51,6 +68,14 @@ const Main = () => {
           <p>🎁 50% SIGNUP BONUS</p>
           <p>🎉 100% REFERRAL BONUS</p>
           <p>🌟 20% REGULAR BONUS FOR VIP GUEST</p>
+        </div>
+        <div className="bg-emerald-300/10 mt-4 p-4 rounded-md text-emerald-200 space-y-1 border border-emerald-400/30">
+          <p className="uppercase tracking-wide text-white  font-bold ">
+            💳 Accepted Payments
+          </p>
+          <p>✅ Cash app . Chime</p>
+          <p>✅ Bank Transfer · Crypto (USDT, BTC, ETH)</p>
+          <p>✅ PayPal · Cards on Request</p>
         </div>
       </div>
       <div className="w-full md:w-xl max-h-max flex flex-col gap-4 p-5 bg-amber-100/10 backdrop-blur-2xl shadow-sm h-full rounded-md">
@@ -269,7 +294,7 @@ const Main = () => {
       </h2>
       <div className="carousel">
         <div className="carousel-track">
-          {Array.from({ length: 19 }, (_, i) => i + 1).map((item, index) => (
+          {Array.from({ length: 21 }, (_, i) => i + 1).map((item, index) => (
             <Image
               src={`/images/winnings/${item}.jpg`}
               onClick={() => {
@@ -284,7 +309,7 @@ const Main = () => {
             />
           ))}
 
-          {Array.from({ length: 19 }, (_, i) => i + 1).map((item, index) => (
+          {Array.from({ length: 21 }, (_, i) => i + 1).map((item, index) => (
             <Image
               src={`/images/winnings/${item}.jpg`}
               onClick={() => {

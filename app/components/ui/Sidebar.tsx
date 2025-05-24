@@ -18,11 +18,11 @@ const Sidebar = () => {
       <p className="text-sm font-bricolage text-neutral-400">
         Your Premium Casino Experience{" "}
       </p>
-      <div className="md:hidden p-6 bg-amber-100/10 backdrop-blur-2xl rounded-xl shadow-lg max-w-xl mx-auto text-center space-y-2 font-bricolage">
-        <h1 className="text-3xl font-bold text-emerald-400 drop-shadow-sm">
+      <div className="p-2 md:p-6  md:hidden text-start bg-amber-100/10 backdrop-blur-2xl rounded-xl shadow-lg max-w-xl mx-auto  space-y-2 font-bricolage">
+        <h1 className="text-2xl font-semibold text-emerald-400  text-center leading-7 mb-3 font-bricolage drop-shadow-sm">
           WELCOME TO OUR GAMEROOM
         </h1>
-        <h2 className="text-xl font-semibold text-amber-300 tracking-wider">
+        <h2 className="text-xl font-bold leading-3 mb-4 font-work-sans text-amber-300 tracking-wider">
           COSTA FAYE GAMES
         </h2>
         <p className="italic text-lg text-white/80">
@@ -39,6 +39,14 @@ const Sidebar = () => {
           <p>🎁 50% SIGNUP BONUS</p>
           <p>🎉 100% REFERRAL BONUS</p>
           <p>🌟 20% REGULAR BONUS FOR VIP GUEST</p>
+        </div>
+        <div className="bg-emerald-300/10 mt-4 p-4 rounded-md text-emerald-200 space-y-1 border border-emerald-400/30">
+          <p className="uppercase tracking-wide text-white  font-bold ">
+            💳 Accepted Payments
+          </p>
+          <p>✅ Cash app . Chime</p>
+          <p>✅ Bank Transfer · Crypto (USDT, BTC, ETH)</p>
+          <p>✅ PayPal · Cards on Request</p>
         </div>
       </div>
 
@@ -70,14 +78,6 @@ const Sidebar = () => {
             More games <ArrowRight className="size-5 stroke-2" />
           </div>
         </Link>
-        <div className="flex flex-wrap justify-between flex-col items-start  ">
-          <p className="text-neutral-400 font-bricolage hover:underline   cursor-pointer">
-            <a href="tel:+15172801270">+15172801270</a>
-          </p>
-          <p className="text-neutral-400 font-bricolage hover:underline cursor-pointer">
-            <a href="mailto:info@costafayegames.com">info@costafayegames.com</a>
-          </p>
-        </div>
       </div>
     </div>
   );

@@ -48,7 +48,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   };
 
   if (!isOpen) return null;
-
+  
   return ReactDOM.createPortal(
     <div
       ref={overlayRef}
@@ -59,7 +59,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     >
       <div
         ref={modalRef}
-        className="bg-neutral-950/50 backdrop-blur-3xl p-6 rounded-xl shadow-lg max-w-md w-full animate-fadeIn"
+        className="bg-neutral-950/50 max-h-screen overflow-hidden  backdrop-blur-3xl p-6 rounded-xl shadow-lg max-w-md w-full animate-fadeIn"
       >
         <button
           onClick={onClose}

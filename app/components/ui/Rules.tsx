@@ -35,15 +35,18 @@ const Rules = () => {
             style={{ objectFit: "cover" }}
           />
         </Modal>
-        <li onClick={()=>setIsSecondRuleOpen(true)} className="w-full bg-neutral-300/20 px-3 py-2 rounded-md cursor-pointer select-none shadow-sm capitalize">
-          cash out rules
+        <li
+          onClick={() => setIsSecondRuleOpen(true)}
+          className="w-full bg-neutral-300/20 px-3 py-2 rounded-md cursor-pointer select-none shadow-sm capitalize"
+        >
+          deposit Cashout rules
         </li>
         <Modal
           isOpen={isSecondRuleOpen}
           onClose={() => setIsSecondRuleOpen(false)}
         >
           <h2 className="text-xl font-semibold mb-2 font-bricolage">
-            Cash out rules
+            Free play and Bonus only Cashout rules
           </h2>
           <Image
             src="/images/rules/2.jpg"
@@ -55,6 +58,17 @@ const Rules = () => {
           />
         </Modal>
       </ul>
+      <div className="flex md:mt-auto flex-wrap self-start mt-2 justify-between flex-col md:items-end  ">
+        <p className="text-neutral-400 font-bricolage hover:underline   cursor-pointer">
+          <a href="tel:+15172801270">+15172801270</a>
+        </p>
+        <p className="text-neutral-400 font-bricolage hover:underline cursor-pointer">
+          <a href="mailto:info@costafayegames.com">info@costafayegames.com</a>
+        </p>
+        <p className="text-sm text-neutral-400 self-start  font-bricolage">
+          4721 Winding Oak Drive, Fort Worth, TX 76133
+        </p>
+      </div>
     </div>
   );
 };
