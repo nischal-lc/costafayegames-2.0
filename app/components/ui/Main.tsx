@@ -30,7 +30,7 @@ const Main = () => {
 
   return (
     <div className="md:col-span-2 px-1 md:w-1/2 w-full mt-12 md:px-0 flex-col shadow-sm flex md:items-center justify-center gap-4">
-      <div className="p-6 bg-amber-100/10 backdrop-blur-2xl rounded-xl shadow-lg max-w-xl mx-auto text-center space-y-2 font-bricolage">
+      <div className="p-6 hidden md:block bg-amber-100/10 backdrop-blur-2xl rounded-xl shadow-lg max-w-xl mx-auto text-center space-y-2 font-bricolage">
         <h1 className="text-3xl font-bold text-emerald-400  font-bricolage drop-shadow-sm">
           WELCOME TO OUR GAMEROOM
         </h1>
