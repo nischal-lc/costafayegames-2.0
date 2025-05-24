@@ -4,7 +4,7 @@ import { Plus } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { useState } from "react";
-import Modal from "@/app/components/ui/Model";
+import Modal from "@/app/components/ui/Modal";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 

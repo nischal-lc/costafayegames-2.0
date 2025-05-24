@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import Modal from "./Model";
+import Modal from "./Modal";
 
 const Rules = () => {
   const [isFirstRuleOpen, setIsFirstRuleOpen] = useState(false);
@@ -61,6 +61,9 @@ const Rules = () => {
       <div className="flex md:mt-auto flex-wrap self-start mt-2 justify-between flex-col md:items-end  ">
         <p className="text-neutral-400 font-bricolage hover:underline   cursor-pointer">
           <a href="tel:+15172801270">+15172801270</a>
+        </p>
+        <p className="text-neutral-400 font-bricolage hover:underline cursor-pointer">
+          <a href="mailto:costafayegames@gmail.com">costafayegames@gmail.com</a>
         </p>
         <p className="text-neutral-400 font-bricolage hover:underline cursor-pointer">
           <a href="mailto:info@costafayegames.com">info@costafayegames.com</a>

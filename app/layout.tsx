@@ -28,7 +28,7 @@ const worksans = Albert_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Costafate Games",
+  title: "Costafaye Games",
   description:
     "Your best source for indie games and game development resources.",
 };
