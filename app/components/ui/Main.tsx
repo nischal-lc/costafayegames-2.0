@@ -214,7 +214,7 @@ const Main = () => {
           <div className="flex flex-wrap gap-2">
             <a
               target="_blank"
-              href="https://telegram.me/Deviling1"
+              href="https://telegram.me/costafaye"
               className="w-full md:max-w-max"
             >
               <div className="min-w-20 w-full md:w-max p-3 h-10 gap-2 flex items-center justify-center rounded-full bg-sky-400/20 cursor-pointer shadow-sm">
